@@ -1,0 +1,24 @@
+version: "2"
+
+services:
+    composer:
+        image: composer
+        volumes:
+            - .:/app
+        command: ['install']
+    php:
+        build: docker/php
+        volumes:
+            - .:/opt/php
+        working_dir: /opt/php
+    db:
+        image: mysql
+        volumes:
+          - ~/.data/db:/var/lib/mysql
+        environment:
+          MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+          MYSQL_DATABASE: ${MYSQL_DATABASE}
+          MYSQL_USER: ${MYSQL_USER}
+          MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+        ports:
+          - 3306:3306

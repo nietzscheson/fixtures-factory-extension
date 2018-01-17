@@ -1,0 +1,17 @@
+services:
+    nietzscheson.fixtures_factory.factory:
+        class: Nietzscheson\FixturesFactoryExtension\Factory\Factory
+
+#services:
+#    nietzscheson.fixtures_factory.array_resolver:
+#        class: Nietzscheson\FixturesFactoryExtension\Fixtures\ArrayResolver
+#        arguments:
+#            - '@kernel'
+#            - '@hautelook_alice.locator.environmentless'
+#
+#    nietzscheson.fixtures_factory:
+#        class: Nietzscheson\FixturesFactoryExtension\Fixtures\Factory
+#        arguments:
+#            - '@doctrine.orm.entity_manager'
+#            - '@nietzcheson.fixtures_factory.array_resolver'
+#            - '@nelmio_alice.data_loader.simple'

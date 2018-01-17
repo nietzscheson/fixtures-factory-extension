@@ -1,0 +1,40 @@
+{
+    "name": "nietzscheson/fixtures-factory-extension",
+    "type": "behat-extension",
+    "description": "Fixtures Factory for Symfony projects",
+    "keywords": ["Fixtures", "Behat", "BDD", "Testing"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cristian Angulo Nova",
+            "email": "cristianangulonova@gmail.com",
+            "homepage": "http://cristianangulo.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "behat/behat": "3.4.3",
+        "behat/symfony2-extension": "2.1.4",
+        "doctrine/orm": "^2.6",
+        "doctrine/doctrine-bundle": "1.8.1",
+        "nelmio/alice": "3.1.3",
+        "theofidry/alice-data-fixtures": "1.0.1",
+        "symfony/symfony":  "~2.0|~3.0"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "4.3.0"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-4": { "Nietzscheson\\FixturesFactoryExtension\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nietzscheson\\FixturesFactoryExtension\\spec\\": "spec/",
+            "Nietzscheson\\FixturesFactoryDemoBundle\\": "testapp/src/"
+        }
+    }
+}
