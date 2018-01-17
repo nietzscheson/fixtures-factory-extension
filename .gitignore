@@ -1,7 +1,8 @@
 .DS_Store
 .idea/
 bin/
+!testapp/bin/
 composer.lock
 vendor/
-testapp/app/cache/
-testapp/app/logs/
+testapp/app/cache/*
+testapp/app/logs/*

@@ -1,1 +1,0 @@
-a:3:{i:0;C:46:"Symfony\Component\Config\Resource\FileResource":42:{s:34:"/opt/php/testapp/app/AppKernel.php";}i:1;C:46:"Symfony\Component\Config\Resource\FileResource":83:{s:75:"/opt/php/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php";}i:2;C:72:"Symfony\Component\DependencyInjection\Config\ContainerParametersResource":6:{a:0:{}}}
