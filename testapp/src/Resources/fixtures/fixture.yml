@@ -1,0 +1,6 @@
+Nietzscheson\FixturesFactoryDemoBundle\Entity\Fixture:
+    fixture:
+        fixture: <name()>
+
+    fixture_{1..10}:
+        fixture: <name()>

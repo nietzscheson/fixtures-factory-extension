@@ -26,10 +26,17 @@ doctrine:
         auto_generate_proxy_classes: "%kernel.debug%"
         naming_strategy: doctrine.orm.naming_strategy.underscore
         auto_mapping: true
+        #mappings:
+        #    FixturesFactoryDemo:
+        #        is_bundle: false
+        #        type: yml
+        #        dir: '%kernel.project_dir%/testapp/src/Entity'
+        #        prefix: 'FixturesFactoryDemo\Entity'
+        #        alias: FixturesFactoryDemo
         mappings:
-            FixturesFactoryDemo:
+            App:
                 is_bundle: false
-                type: yml
-                dir: '%kernel.project_dir%/testapp/src/FixturesFactoryDemoBundle/Entity'
-                prefix: 'Nietzscheson\FixturesFactoryDemo\Entity'
-                alias: FixturesFactoryDemo
+                type: annotation
+                dir: '%kernel.project_dir%/testapp/src/Entity'
+                prefix: 'FixturesFactoryDemo\Entity'
+                alias: App

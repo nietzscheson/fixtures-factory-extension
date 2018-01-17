@@ -20,6 +20,9 @@ class AppKernel extends Kernel
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Nietzscheson\FixturesFactoryDemoBundle\FixturesFactoryDemoBundle(),
+            new Nelmio\Alice\Bridge\Symfony\NelmioAliceBundle(),
+            new Fidry\AliceDataFixtures\Bridge\Symfony\FidryAliceDataFixturesBundle(),
+            new Hautelook\AliceBundle\HautelookAliceBundle()
         );
     }
 
@@ -37,4 +40,3 @@ $kernel = new AppKernel('dev', true);
 $request = Request::createFromGlobals();
 $response = $kernel->handle($request);
 $response->send();
-$kernel->terminate($request, $response);

@@ -3,5 +3,5 @@
 bin/
 composer.lock
 vendor/
-test/app/cache/*
-test/app/logs/*
+testapp/app/cache/
+testapp/app/logs/

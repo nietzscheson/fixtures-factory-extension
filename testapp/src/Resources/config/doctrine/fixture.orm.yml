@@ -1,0 +1,14 @@
+Nietzscheson\FixturesFactoryDemoBundle\Entity\Fixture:
+  type: entity
+  table: fixture
+  repositoryClass: Nietzscheson\FixturesFactoryDemoBundle\Doctrine\ORM\FixtureRepository
+  id:
+      id:
+          type: integer
+          unique: yes
+          id: true
+          generator:
+              strategy: IDENTITY
+  fields:
+      fixture:
+          type: string
