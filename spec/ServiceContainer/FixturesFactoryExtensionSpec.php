@@ -8,6 +8,7 @@ use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
+use Nietzscheson\FixturesFactoryDemoBundle\FixturesFactoryDemoBundle;
 
 class FixturesFactoryExtensionSpec extends ObjectBehavior
 {
